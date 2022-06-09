@@ -1,4 +1,4 @@
-package com.mybank.tui;
+
 
 import java.util.ArrayList;
 import com.mybank.domain.*;
@@ -63,10 +63,10 @@ public class TUIdemo extends TApplication {
 
     private void ShowCustomerDetails() {
         ArrayList<Customer> List = new ArrayList();
-        List.add(new Customer("Alex", "Johnson"));
-        List.add(new Customer("Joe", "Biden"));
-        List.get(0).addAccount(new SavingsAccount(500, 0.05));
-        List.get(1).addAccount(new CheckingAccount(400, 300));
+        List.add(new Customer("Ann", "Smith"));
+        List.add(new Customer("Mark", "Dominik"));
+        List.get(0).addAccount(new SavingsAccount(200, 0.2));
+        List.get(1).addAccount(new CheckingAccount(150, 600));
         TWindow custWin = addWindow("Customer Window", 2, 1, 40, 10, TWindow.NOZOOMBOX);
         custWin.newStatusBar("Enter valid customer number and press Show...");
 
